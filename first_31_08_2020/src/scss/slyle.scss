@@ -137,3 +137,31 @@ main.page {
    height: 100%;
    width: 100%;
 }
+.header__nav {
+   display: flex;
+   justify-content: center;
+}
+.header__list-left,
+.header__list-right {
+   display: flex;
+   align-items: center;
+}
+.header__list-left {
+   margin-right: 4rem;
+}
+.header__list-right {
+   margin-left: 4rem;
+}
+.header__item {
+   margin: 0 1rem;
+}
+.header__link {
+   text-transform: uppercase;
+   color: #4d4959;
+   font-family: LatoBold;
+}
+.header__point {
+   background: #4d4959;
+   width: 2px;
+   height: 2px;
+}

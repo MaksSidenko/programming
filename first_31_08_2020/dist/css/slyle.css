@@ -1,33 +1,25 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Asap-Bold";
+  font-family: "LatoBold";
   font-display: swap;
-  src: url("../fonts/Asap-Bold.woff") format("woff"), url("../fonts/Asap-Bold.woff2") format("woff2");
+  src: url("../fonts/LatoBold.woff") format("woff"), url("../fonts/LatoBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Asap-Medium";
+  font-family: "LatoLight";
   font-display: swap;
-  src: url("../fonts/Asap-Medium.woff") format("woff"), url("../fonts/Asap-Medium.woff2") format("woff2");
+  src: url("../fonts/LatoLight.woff") format("woff"), url("../fonts/LatoLight.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "TimesNewRomanRegular";
+  font-family: "LatoRegular";
   font-display: swap;
-  src: url("../fonts/TimesNewRomanRegular.woff") format("woff"), url("../fonts/TimesNewRomanRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Asap-Regular";
-  font-display: swap;
-  src: url("../fonts/Asap-Regular.woff") format("woff"), url("../fonts/Asap-Regular.woff2") format("woff2");
+  src: url("../fonts/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -195,4 +187,55 @@ main.page {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__list-left,
+.header__list-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list-left {
+  margin-right: 4rem;
+}
+
+.header__list-right {
+  margin-left: 4rem;
+}
+
+.header__item {
+  margin: 0 1rem;
+}
+
+.header__link {
+  text-transform: uppercase;
+  color: #4d4959;
+  font-family: LatoBold;
+}
+
+.header__point {
+  background: #4d4959;
+  width: 2px;
+  height: 2px;
 }
