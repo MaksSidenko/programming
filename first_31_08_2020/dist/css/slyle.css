@@ -189,6 +189,13 @@ main.page {
   width: 100%;
 }
 
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding: 2rem 0;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -214,18 +221,26 @@ main.page {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .header__list-left {
-  margin-right: 4rem;
+  margin-right: 3.6rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .header__list-right {
-  margin-left: 4rem;
+  margin-left: 3.6rem;
 }
 
 .header__item {
-  margin: 0 1rem;
+  margin: 0 1.4rem;
 }
 
 .header__link {
