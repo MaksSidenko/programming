@@ -26,3 +26,6 @@ testWebP(function (support) {
       document.querySelector('body').classList.add('no-webp');
    }
 });
+$('.menu__burger').click(function (event) {
+   $(this).toggleClass("active")
+});
