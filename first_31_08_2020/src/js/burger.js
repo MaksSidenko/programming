@@ -1,3 +1,3 @@
 $('.menu__burger').click(function (event) {
-   $(this).toggleClass("active")
+   $(this).toggleClass("burger__active")
 });

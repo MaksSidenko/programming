@@ -256,26 +256,19 @@ main.page {
 }
 
 .menu__burger {
-  z-index: 1;
   position: absolute;
-  right: 10px;
-  top: 53px;
+  right: 24px;
+  top: 50px;
 }
 
 .menu__burger-inner {
   width: 3rem;
   height: 3rem;
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
@@ -284,28 +277,91 @@ main.page {
 }
 
 .menu__burger-inner span {
-  width: 32px;
-  height: 6px;
+  width: 30px;
+  height: 4px;
   background-color: #000;
   display: block;
+  position: relative;
+  left: 9px;
 }
 
 .menu__burger-inner span::after {
-  width: 32px;
-  height: 6px;
+  width: 30px;
+  height: 4px;
   content: "";
   background-color: #000;
   display: block;
   position: absolute;
-  top: 11px;
+  top: -9px;
+  -webkit-transform: rotate(0);
+     -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+       -o-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: top 0.5s 0.5s, -webkit-transform 0.5s;
+  transition: top 0.5s 0.5s, -webkit-transform 0.5s;
+  -o-transition: top 0.5s 0.5s, -o-transform 0.5s;
+  -moz-transition: top 0.5s 0.5s, transform 0.5s, -moz-transform 0.5s;
+  transition: top 0.5s 0.5s, transform 0.5s;
+  transition: top 0.5s 0.5s, transform 0.5s, -webkit-transform 0.5s, -moz-transform 0.5s, -o-transform 0.5s;
 }
 
 .menu__burger-inner span::before {
-  width: 32px;
-  height: 6px;
+  width: 30px;
+  height: 4px;
   content: "";
   background-color: #000;
   display: block;
   position: absolute;
-  top: 31px;
+  top: 9px;
+  -webkit-transform: rotate(0);
+     -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+       -o-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: top 0.5s 0.5s, -webkit-transform 0.5s;
+  transition: top 0.5s 0.5s, -webkit-transform 0.5s;
+  -o-transition: top 0.5s 0.5s, -o-transform 0.5s;
+  -moz-transition: top 0.5s 0.5s, transform 0.5s, -moz-transform 0.5s;
+  transition: top 0.5s 0.5s, transform 0.5s;
+  transition: top 0.5s 0.5s, transform 0.5s, -webkit-transform 0.5s, -moz-transform 0.5s, -o-transform 0.5s;
+}
+
+.burger__active span {
+  width: 0;
+  height: 0;
+}
+
+.burger__active span::before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: top 0.27s, -webkit-transform 0.27s 0.27s;
+  transition: top 0.27s, -webkit-transform 0.27s 0.27s;
+  -o-transition: top 0.27s, -o-transform 0.27s 0.27s;
+  -moz-transition: top 0.27s, transform 0.27s 0.27s, -moz-transform 0.27s 0.27s;
+  transition: top 0.27s, transform 0.27s 0.27s;
+  transition: top 0.27s, transform 0.27s 0.27s, -webkit-transform 0.27s 0.27s, -moz-transform 0.27s 0.27s, -o-transform 0.27s 0.27s;
+}
+
+.burger__active span::after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 0.27s, -webkit-transform 0.27s 0.27s;
+  transition: top 0.27s, -webkit-transform 0.27s 0.27s;
+  -o-transition: top 0.27s, -o-transform 0.27s 0.27s;
+  -moz-transition: top 0.27s, transform 0.27s 0.27s, -moz-transform 0.27s 0.27s;
+  transition: top 0.27s, transform 0.27s 0.27s;
+  transition: top 0.27s, transform 0.27s 0.27s, -webkit-transform 0.27s 0.27s, -moz-transform 0.27s 0.27s, -o-transform 0.27s 0.27s;
 }
